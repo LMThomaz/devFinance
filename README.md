@@ -24,7 +24,7 @@
 
 ## :mag: Sobre o projeto
 
-Feito de desenvolvedor para desenvolvedor, sistema para seu controle finânceiro :computer::dollar:  
+Feito de desenvolvedor para desenvolvedor, sistema para seu controle financeiro :computer::dollar:  
 Desenvolvido durante a Maratona Discover, oferecida pela [Rocketseat :rocket:][url-rocketseat]  
 A maratona detêm o conteúdo prático de todo os cursos oferecidos na plataforma de forma gratuíta, também oferecendo desáfios, insights, hacks e uma explicação concisa :coffee:
 
