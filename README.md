@@ -1,8 +1,6 @@
 <h4 align="center">
-    <img alt="" src=".github/logo.svg" />
+    <img alt="" src=".github/logo.svg" width="200px" />
     <br/>
-    Gerencia suas finanças
-    <br>
 </h4>
 
 <p align="center">
@@ -25,23 +23,33 @@
 ## :mag: Sobre o projeto
 
 Feito de desenvolvedor para desenvolvedor, sistema para seu controle financeiro :computer::dollar:  
-Desenvolvido durante a Maratona Discover, oferecida pela [Rocketseat :rocket:][url-rocketseat]  
-A maratona detêm o conteúdo prático de todo os cursos oferecidos na plataforma de forma gratuíta, também oferecendo desáfios, insights, hacks e uma explicação concisa :coffee:
+Projeto base desenvolvido durante a Maratona Discover, oferecida pela [Rocketseat :rocket:][url-rocketseat]  
+A maratona deteve de conteúdo prático de todo os cursos oferecidos na plataforma de forma gratuíta, também oferecendo desáfios, insights, hacks e uma explicação concisa :coffee:
 
 ---
 
 ## :art: O Layout?
+
+Novo layout desenvolvido em [live na twitch][url-twitch-front]
 ![Capa devFinance](.github/capa.png)
 
 ---
 
 ## :hammer: Tecnologias?
 
-Utilizando a tríade base da web:
+A tríade base da web:
 
 - HTML
 - CSS
 - JavaScript
+
+---
+
+## :books: Bibliotecas?
+
+Libs por CDN:
+
+- particleJs
 
 ---
 
@@ -52,6 +60,8 @@ Utilizando a tríade base da web:
 - [Git][url-git]
 - Editor de texto (recomendação: [VSCode][url-vs])
 
+---
+
 ## :package: Como clonar a aplicação?
 
 ```bash
@@ -59,30 +69,31 @@ Utilizando a tríade base da web:
 $ git clone https://github.com/LMThomaz/devFinance
 ```
 
+---
+
 ## :coffee: Como posso ajudar?
 
-1. Faça o Fork deste repositório
-2. Comece uma branch com sua feature
-
 ```bash
+  #1. Faça o Fork deste repositório
+
+  #2. Comece uma branch com sua feature
 $ git checkout -b minha-feature
-```
 
-3. Confirme (Commit) seus feitos
-
-```bash
+  #3. Confirme (Commit) seus feitos
 $ git commit -m 'Minha nova feature'
-```
 
-4. Suba (push) sua branch
-
-```bash
+  #4. Suba (push) sua branch
 $ git push origin minha-feature
 ```
 
+---
+
 ## :mortar_board: Quem ministrou ?
 
-As aulas foram ministradas pelo [Mayk Brito][mayk], durante as aulas da **Maratona Discover** :rocket:
+O projeto base fora feito em aulas ministradas pelo [Mayk Brito][mayk], durante as aulas da **Maratona Discover** :rocket:  
+As alterações do projeto fora realizado ao vivo na [twitch][url-twitch] :camera:
+
+---
 
 ## :page_with_curl: Licença
 
@@ -95,6 +106,8 @@ Feito com 💜 por <a href="https://www.linkedin.com/in/leonardo-thomaz/" target
 </h4>
 
 [url-rocketseat]: https://rocketseat.com.br/
+[url-twitch-front]: https://www.twitch.tv/videos/905445124
+[url-twitch]: https://www.twitch.tv/llthomaz
 [url-git]: https://git-scm.com/
 [url-vs]: https://code.visualstudio.com/
 [url-npm]: https://www.npmjs.com/
