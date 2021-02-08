@@ -7,6 +7,11 @@
   <br>
   <img alt="Language count" src="https://img.shields.io/github/repo-size/LMThomaz/devFinance"/>
 
+
+  <a href="https://twitch.tv/llthomaz">
+    <img alt="Made by llthomaz" src="https://img.shields.io/badge/made%20by-llthomaz-%237519C1">
+  </a>
+  
   <a href="https://rocketseat.com.br">
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1">
   </a>
