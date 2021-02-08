@@ -59,21 +59,22 @@ const DOM = {
   transactionsContainer: document.querySelector("#dataTable tbody"),
 
   addTransaction(transaction, index) {
+    const classCSS = transaction.amount > 0 ? "income" : "expense";
+
     const tr = document.createElement("tr");
     tr.innerHTML = DOM.innerHTMLTransaction(transaction, index);
     tr.dataset.index = index;
+    tr.classList.add(classCSS);
 
     DOM.transactionsContainer.appendChild(tr);
   },
 
   innerHTMLTransaction({ description, amount, date }, index) {
-    const classCSS = amount > 0 ? "income" : "expense";
-
     const amountCurrency = Utils.formatCurrency(amount);
 
     const html = `
-      <td class="description">${description}</td>
-      <td class=${classCSS}>${amountCurrency}</td>
+      <td>${description}</td>
+      <td>${amountCurrency}</td>
       <td class="date">${date}</td>
       <td>
         <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação" />
@@ -128,7 +129,7 @@ const Utils = {
   formatAmount(value) {
     value = Number(value) * 100;
 
-    return value;
+    return Math.round(value);
   },
 
   formatDate(date) {
@@ -216,3 +217,5 @@ const App = {
 };
 
 App.init();
+
+particlesJS.load("particlesJs", "../particles.json", function () {});
