@@ -30,9 +30,7 @@ A maratona detêm o conteúdo prático de todo os cursos oferecidos na plataform
 
 ---
 
-## :art: O protótipo?
-
-O layout da aplicação está disponível no [Figma][url-figma]
+## :art: O Layout?
 ![Capa devFinance](.github/capa.png)
 
 ---
@@ -96,7 +94,6 @@ O projeto está utilizando a licença MIT. Confira [LICENSE][license] para mais 
 Feito com 💜 por <a href="https://www.linkedin.com/in/leonardo-thomaz/" target="_blank">Leonardo Thomaz</a>
 </h4>
 
-[url-figma]: https://www.figma.com/file/vBNDmSI71wooNPWbL5uc6L/dev.finance-Maratona-Discover?node-id=0%3A1/
 [url-rocketseat]: https://rocketseat.com.br/
 [url-git]: https://git-scm.com/
 [url-vs]: https://code.visualstudio.com/
