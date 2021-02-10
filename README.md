@@ -7,7 +7,6 @@
   <br>
   <img alt="Language count" src="https://img.shields.io/github/repo-size/LMThomaz/devFinance"/>
 
-
   <a href="https://twitch.tv/llthomaz">
     <img alt="Made by llthomaz" src="https://img.shields.io/badge/made%20by-llthomaz-%237519C1">
   </a>
@@ -45,7 +44,7 @@ Novo layout desenvolvido em [live na twitch][url-twitch-front]
 A tríade base da web:
 
 - HTML
-- CSS
+- SCSS
 - JavaScript
 
 ---

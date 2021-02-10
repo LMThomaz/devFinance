@@ -1,0 +1,92 @@
+@import "./partials/colors";
+
+html {
+  font-size: 93.75%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Titles ============== */
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+
+  font-weight: normal;
+}
+
+/* Links & Buttons ============= */
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 1.8rem;
+  background: $gradientButtonGreen;
+  font-size: 1.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $boxShadow;
+  padding: 1rem 1.8rem;
+  margin: auto;
+  color: white;
+  opacity: 0.7;
+  transition: all 260ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* Inputs ============== */
+input {
+  border: none;
+  border-radius: 1rem;
+
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  font-family: var(--font-default);
+  color: white;
+
+  &::placeholder {
+    color: white;
+    opacity: 0.6;
+  }
+}
+
+/* Footer ============== */
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: $white;
+  opacity: 0.6;
+}
+
+@import "./partials/layout";
+@import "./partials/buttons";
+@import "./partials/particles";
+@import "./partials/header";
+@import "./partials/balance";
+@import "./partials/cards";
+@import "./partials/table";
+@import "./partials/modal";
+@import "./partials/form";
+
+@import "./partials/responsive";
+@import "./partials/util";

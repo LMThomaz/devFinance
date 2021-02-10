@@ -94,6 +94,14 @@ const DOM = {
     document.getElementById("totalDisplay").innerHTML = Utils.formatCurrency(
       Transaction.total()
     );
+
+    document
+      .querySelector("header")
+      .classList.toggle("bg-gradient-green", Transaction.total() > 0);
+
+    document
+      .querySelector("header")
+      .classList.toggle("bg-gradient-red", Transaction.total() < 0);
   },
 
   clearElement(element) {
@@ -205,11 +213,38 @@ const Form = {
   },
 };
 
+const Particle = {
+  getLoad() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "../particles.json");
+    xhr.onreadystatechange = function (data) {
+      if (xhr.readyState == 4) {
+        Particle.color(data.currentTarget.response);
+      }
+    };
+    xhr.send();
+  },
+  color(data) {
+    const newColor =
+      Transaction.incomes() > Math.abs(Transaction.expenses())
+        ? "#3cec68"
+        : "#e83f5b";
+
+    const configParticle = JSON.parse(data);
+
+    configParticle.particles.color.value = newColor;
+    configParticle.particles.line_linked.color = newColor;
+
+    window.particlesJS("particlesJs", configParticle);
+  },
+};
+
 const App = {
   init() {
     DOM.renderTransactions(Transaction.all);
     Storage.set(Transaction.all);
     DOM.updateBalance();
+    Particle.getLoad();
   },
   reload() {
     App.init();
@@ -217,5 +252,3 @@ const App = {
 };
 
 App.init();
-
-particlesJS.load("particlesJs", "../particles.json", function () {});

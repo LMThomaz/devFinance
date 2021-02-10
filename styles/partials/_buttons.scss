@@ -1,0 +1,34 @@
+a.button {
+  border-radius: 1.8rem;
+  background: $gradientRose;
+  font-size: 1.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $boxShadow;
+  padding: 0.8rem 1.8rem;
+  margin: auto;
+}
+
+.button.new {
+  background: $gradientButtonGreen;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.8rem;
+  opacity: 1;
+}
+
+.button.new:hover {
+  opacity: 0.7;
+}
+
+.button.cancel {
+  color: white;
+  transition: all 260ms ease-in-out;
+  background: $gradientRed;
+  opacity: 0.7;
+}
+
+.button.cancel:hover {
+  opacity: 1;
+}
